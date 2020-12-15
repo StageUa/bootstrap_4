@@ -343,6 +343,9 @@ body {
 .page {
   overflow: hidden; }
 
+.nav {
+  display: flex; }
+
 .sidebar {
   width: 300px;
   height: 100vh;
@@ -373,13 +376,20 @@ body {
   padding: 0 2rem; }
 
 .header {
+  display: flex;
   width: calc(100% - 300px);
-  height: 30px;
-  background-color: #444;
+  background-color: #0d0d0d;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.25);
   position: fixed;
   top: 0;
   right: 0;
   z-index: 1000; }
+
+.header__left {
+  width: 60%; }
+
+.header__right {
+  height: 40%; }
 
 .container {
   max-width: 70rem;
