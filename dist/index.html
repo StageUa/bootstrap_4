@@ -21,24 +21,48 @@
         <header class="header">
             <div class="header__left">
                 <nav class="nav">
-                    <ul>
-                        <li>
-                            <a href="#">Главная</a>
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">ГЛАВНАЯ</a>
                         </li>
+                        <li class="nav__item">
+                            <a class="nav__link has-subnav" href="#">СТАТЬИ</a>
+        
+                            <ul class="subnav">
+                                <li>
+                                    <a class="subnav__link" href="#">Создание сайтов</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#">Интернет-маркетингв</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#">Продвижение видео</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">ОБО МНЕ</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">РЕКЛАМА</a>
+                        </li>                    
                     </ul>
                 </nav>
             </div>
         
             <div class="header__right">
                 <nav class="nav">
-                    <ul>
-                        <li>
-                            <a href="#">Профиль</a>
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Профиль</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">ВЫЙТИ</a>
                         </li>
                     </ul>
                 </nav>
-                <form action="/" method="post">
-                    <input type="text">
+                <form class="search" action="/" method="post">
+                    <input class="search__input" type="text" placeholder="Поиск по сайту">
                 </form>
             </div>
         </header>
