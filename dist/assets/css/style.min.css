@@ -354,7 +354,8 @@ a {
 .nav__item {
   position: relative; }
   .nav__item:hover .nav__link {
-    background-color: #3137c9; }
+    background-color: #3137c9;
+    text-decoration: none; }
   .nav__item:hover > .subnav {
     display: block; }
 
