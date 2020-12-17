@@ -117,7 +117,7 @@
                 
                 <article class="post">
                     <div class="post__actions">
-                        <a href="#">вернуться назад</a>
+                        <a href="index.html">вернуться назад</a>
                         <a href="#">поделиться
                             <img class="post__actions--icon" src="assets/images/social-icon/share 1.svg" alt="">
                         </a>
@@ -175,7 +175,7 @@
                         </div> <!--/.post__text-->
                 
                         <div class="related">
-                            <h3 class="related__title">Интересно почитать</h3>
+                            <h3 class="post__subtitle">Интересно почитать</h3>
                 
                             <ul class="related__list">
                                 <li class="related__list-item">
@@ -187,7 +187,7 @@
                 
                                 <li class="related__list-item">
                                     <h4 class="related__list-title">
-                                        <a href="#">понравился крутой клип</a> 
+                                        <a href="#">понравился крутой клип Hammerfall</a> 
                                     </h4>
                                     <time class="related__list-date" datetime="2020-06-21 18:45">21.06.2020</time>
                                 </li>
@@ -209,6 +209,21 @@
                             </ul> <!--/.related__list-->
                         </div> <!--/.related-->
                 
+                        <!-- Comments -->
+                        
+                            <h3 class="post__subtitle">Обсуждение</h3>
+                
+                            <form class="form" action="/" method="post">
+                                <div class="form__group">
+                                    <textarea class="form__control form__control--textarea" name="comment-text" placeholder="Текст комментария"></textarea>
+                                    <span class="form__line"></span>
+                                </div>
+                                <button class="btn btn--blue btn--rounded btn--sm" type="submit">Отправить</button>
+                            </form>
+                
+                            <ul class="comments"></ul>
+                
+                        
                     </div>  <!--/.post__content-->
                     
                 </article> <!--/.article post-->

@@ -500,6 +500,10 @@ a {
     box-shadow: 0 7px 17px -10px rgba(49, 55, 201, 0.3); }
     .btn--blue:hover {
       background-color: #2c31b4; }
+  .btn--rounded {
+    border-radius: 0.41em; }
+  .btn--sm {
+    padding: 0.7em 1.25em; }
 
 .search {
   width: 100%;
@@ -681,6 +685,13 @@ a {
   .post__title--mb0 {
     margin-bottom: 0; }
 
+.post__subtitle {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 500; }
+
 .post__descritpion {
   font-size: 1.4rem;
   color: #d2d2d2; }
@@ -809,14 +820,8 @@ a {
     box-shadow: 0 0 10px rgba(49, 55, 201, 0.15); }
 
 .related {
-  padding: 3rem 0 .5rem;
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid #1c1c1c; }
-
-.related__title {
-  margin-bottom: 2rem;
-  font-size: 1.6rem;
-  color: #fff;
-  font-weight: 500; }
 
 .related__list {
   display: flex;
@@ -829,6 +834,51 @@ a {
 .related__list-title {
   font-size: 1.4rem;
   color: #f3eba2;
-  font-weight: 500; }
+  font-weight: 500;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap; }
   .related__list-title a {
     color: inherit; }
+
+.related__list-date {
+  font-size: 1.2rem;
+  color: #828282; }
+
+.comments {
+  margin-top: 3rem; }
+
+.form__group {
+  margin-bottom: 1.5rem;
+  position: relative; }
+
+.form__control {
+  display: block;
+  width: 100%;
+  padding: .5rem 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #3f3f3f;
+  border-radius: 0;
+  box-shadow: none;
+  font-family: inherit;
+  font-size: 1.4rem;
+  color: #fff; }
+  .form__control::placeholder {
+    color: rgba(255, 255, 255, 0.2); }
+  .form__control:focus + .form__line {
+    width: 100%; }
+  .form__control--textarea {
+    height: 30px;
+    overflow: hidden;
+    resize: none; }
+
+.form__line {
+  width: 0;
+  height: 1px;
+  background-color: #3137c9;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  transition: width .2s linear; }
