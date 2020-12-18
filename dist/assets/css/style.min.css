@@ -904,11 +904,13 @@ a {
 .form__group {
   margin-bottom: 1.5rem;
   position: relative; }
+  .form__group--md {
+    margin-bottom: 2.5rem; }
 
 .form__control {
   display: block;
   width: 100%;
-  padding: .5rem 0;
+  padding: .5rem 0 .75rem;
   background: none;
   border: none;
   border-bottom: 1px solid #3f3f3f;
