@@ -29,6 +29,10 @@ a {
     &:hover {
         text-decoration: underline;
     }
+
+    &.no-scroll {
+        overflow: hidden;
+    }
 }
 
 // Blocks
@@ -54,6 +58,7 @@ a {
 @import "blocks/work.scss";
 @import "blocks/tags.scss";
 @import "blocks/cabinet.scss";
+@import "blocks/modal.scss";
 
 
 
