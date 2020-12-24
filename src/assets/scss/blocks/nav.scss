@@ -1,6 +1,11 @@
-.nav {
+.nav {    
+    &--mobile {
+        display: none;
+        margin: 3rem 0;
+    }
+
     @include brakepoint($tablet-bp) {
-         display: none;
+        display: none;
 
         &--mobile {
             display: block;
