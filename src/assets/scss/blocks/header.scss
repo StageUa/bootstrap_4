@@ -18,10 +18,20 @@
 
 .header__left {
     width: 60%;
+
+    @include brakepoint($tablet-bp) {
+        width: 40%;
+    }
 }
 
 .header__right {
     height: 40%;
     display: flex;
     justify-content: flex-end;
+
+    @include brakepoint($tablet-bp) {
+        width: 60%;
+    }
+
+
 }
