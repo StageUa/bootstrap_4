@@ -12,6 +12,14 @@
     z-index: $z-index-sidebar;
 
     @include brakepoint($tablet-bp) {
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 4rem);
+        padding-bottom: 1.5rem;
+        overflow: auto;
+
+        top: 4rem;
+        
         transform: translateX(-100%);
         transition: transform .2s linear;
 
@@ -22,7 +30,7 @@
 }
 
 .sidebar__header {
-    height: 180px;
+    height: 18rem;
     background-color: $secondary;
 
     img {
@@ -31,11 +39,21 @@
         height: 100%;
         object-fit: cover;
     }
+
+    @include brakepoint($tablet-bp) {
+        height: 10rem;
+    }
 }
+
 .sidebar__content {
-    padding: 0 2rem;
-    margin-top: -5rem;
+    padding: 0 2rem; 
+    
+    @include brakepoint($tablet-bp) {
+        flex-grow: 1;
+    }
+    
 }
+
 .sidebar__footer {
     display: flex;
     justify-content: space-between;

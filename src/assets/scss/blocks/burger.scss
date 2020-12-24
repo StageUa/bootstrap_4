@@ -1,4 +1,5 @@
 .burger {
+    display: none;
     width: 3rem;
     height: 2rem;
     padding: 0;
@@ -67,5 +68,9 @@
         &::after {
             transform: rotate(-45deg);
         }
+    }
+
+    @include brakepoint($tablet-bp) {
+        display: block;
     }
 }
