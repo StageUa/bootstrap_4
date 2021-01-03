@@ -2,7 +2,8 @@
     padding: 10rem 0 8rem
     $sidebar-width;
 
-    @include brakepoint($tablet-bp) {
-        padding-left: 0;
+    @include brakepoint($tablet-bp) {         
+
+        padding: 7rem 0 5rem;
     }
 }

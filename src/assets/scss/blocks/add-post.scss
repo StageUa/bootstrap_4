@@ -11,6 +11,10 @@
 .add-post__form {
     display: flex;
     align-items: center;
+
+    @include brakepoint($mobile-bp) {
+        padding: 0;
+    }
 }
 
 .add-post__textarea {
@@ -33,10 +37,14 @@
 }
 
 .add-post__form-actions {
-    width: 120px;
+    width: 12rem;
     flex-shrink: 0;
     display: flex;
     justify-content: flex-end;
+
+    @include brakepoint($mobile-bp) {
+        width: 9rem;
+    }
 }
 
 .add-post__file,
@@ -50,6 +58,12 @@
     cursor: pointer;  
     
     transition: background-color .2s linear;
+
+    @include brakepoint($mobile-bp) {
+        width: 3.4rem;
+        height: 3.4rem;
+    }
+
 }
 
 .add-post__file {
