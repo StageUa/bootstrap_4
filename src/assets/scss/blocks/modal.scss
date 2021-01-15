@@ -33,7 +33,7 @@
     transform: translateY(-50px);
     transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
 
-    @include breakpoint($tablet-bp) {
+    @include brakepoint($tablet-bp) {
         padding: 5rem 3rem 3rem;
     }
 

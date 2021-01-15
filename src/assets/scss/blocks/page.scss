@@ -24,7 +24,7 @@
 }
 
 .page__mask {
-    @include breakpoint($tablet-bp) {        
+    @include brakepoint($tablet-bp) {        
         content: "";
         display: block;
         width: 100%;
