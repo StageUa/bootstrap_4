@@ -811,7 +811,7 @@ a {
 .add-post__textarea {
   display: block;
   flex-grow: 1;
-  height: 26px;
+  height: 34px;
   overflow: hidden;
   border: none;
   background: transparent;
