@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\n\n//# sourceURL=webpack:///./src/assets/js/mobileNav.js?");
+eval("const burger = document.getElementById('sidebarToggle');\nconst sidebar = document.getElementById('sidebar');\n\nburger.addEventListener('click', event => {\n    document.body.classList.toggle('show-sidebar');\n});\n\n//# sourceURL=webpack:///./src/assets/js/mobileNav.js?");
 
 /***/ }),
 
