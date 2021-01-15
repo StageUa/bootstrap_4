@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("const burger = document.getElementById('sidebarToggle');\nconst sidebar = document.getElementById('sidebar');\n\nburger.addEventListener('click', event => {\n    document.body.classList.toggle('show-sidebar');\n});\n\n//# sourceURL=webpack:///./src/assets/js/mobileNav.js?");
+eval("const burger = document.getElementById('sidebarToggle');\nconst sidebar = document.getElementById('sidebar');\nconst page = document.getElementById('page');\nconst body = document.body;\n\nburger.addEventListener('click', event => {\n    if( body.classList.contains('show-sidebar') ) {\n        closeSidebar();\n    } else {\n        showSidebar();\n    }\n});\n\nfunction showSidebar() {\n    let mask = document.createElement('div');\n    mask.classList.add('page__mask');\n    mask.addEventListener('click', closeSidebar);\n    page.appendChild(mask);\n\n    body.classList.add('show-sidebar');\n}\n\nfunction closeSidebar() {    \n    body.classList.remove('show-sidebar');\n    document.querySelector('.page__mask').remove();\n}\n\n//# sourceURL=webpack:///./src/assets/js/mobileNav.js?");
 
 /***/ }),
 
