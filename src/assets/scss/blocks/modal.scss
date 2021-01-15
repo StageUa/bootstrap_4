@@ -1,5 +1,4 @@
-.modal {
-    // display: flex;
+.modal {    
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -15,6 +14,10 @@
     top: 0;
     left: 0;
     z-index: $z-index-modal;
+
+    &.show {
+        display: flex;
+    }
 }
 
 .modal__content {
@@ -72,6 +75,3 @@
     }    
 }
 
-.modal__video {
-    
-}
