@@ -108,14 +108,25 @@ eval("const modalBtn = document.querySelectorAll('[data-modal]');\nconst body = 
 
 /***/ }),
 
+/***/ "./src/assets/js/textarea.js":
+/*!***********************************!*\
+  !*** ./src/assets/js/textarea.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("const textArea = document.querySelectorAll('[data-autoresize]');\n\ntextArea.forEach(item => {\n    let textAreaH = item.offsetHeight;\n\n    item.addEventListener('input', event => {\n        let $this = event.target;\n\n        $this.style.height = textAreaH + 'px';\n        $this.style.height = $this.scrollHeight + 'px';\n    });\n});\n\n//# sourceURL=webpack:///./src/assets/js/textarea.js?");
+
+/***/ }),
+
 /***/ 0:
-/*!*******************************************************************!*\
-  !*** multi ./src/assets/js/mobileNav.js ./src/assets/js/modal.js ***!
-  \*******************************************************************/
+/*!***********************************************************************************************!*\
+  !*** multi ./src/assets/js/mobileNav.js ./src/assets/js/modal.js ./src/assets/js/textarea.js ***!
+  \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! /home/stage/bootstrap_4/src/assets/js/mobileNav.js */\"./src/assets/js/mobileNav.js\");\nmodule.exports = __webpack_require__(/*! /home/stage/bootstrap_4/src/assets/js/modal.js */\"./src/assets/js/modal.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/mobileNav.js_./src/assets/js/modal.js?");
+eval("__webpack_require__(/*! /home/stage/bootstrap_4/src/assets/js/mobileNav.js */\"./src/assets/js/mobileNav.js\");\n__webpack_require__(/*! /home/stage/bootstrap_4/src/assets/js/modal.js */\"./src/assets/js/modal.js\");\nmodule.exports = __webpack_require__(/*! /home/stage/bootstrap_4/src/assets/js/textarea.js */\"./src/assets/js/textarea.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/mobileNav.js_./src/assets/js/modal.js_./src/assets/js/textarea.js?");
 
 /***/ })
 

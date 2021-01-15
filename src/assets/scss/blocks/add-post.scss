@@ -10,7 +10,7 @@
 
 .add-post__form {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 
     @include brakepoint($mobile-bp) {
         padding: 0;
